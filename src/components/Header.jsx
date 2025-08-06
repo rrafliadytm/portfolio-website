@@ -7,42 +7,35 @@ function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
+    <header className="dark:bg-slate-900 shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         
         {/* Logo atau Nama Website */}
-        <a href="/" className="text-2xl font-bold text-gray-800">
+        <a href="/" className="text-2xl font-bold text-white">
           My Portfolio
         </a>
 
         {/* Navigasi untuk Desktop 🖥️ */}
         <nav className="hidden md:flex space-x-8">
-          <a href="/projects" className="text-gray-600 hover:text-blue-500">
+          <a href="/projects" className="text-white font-semibold hover:text-blue-500">
             Proyek
           </a>
-          <a href="#about" className="text-gray-600 hover:text-blue-500">
+          <a href="#about" className="text-white font-semibold hover:text-blue-500">
             Tentang Saya
           </a>
-          <a href="#contact" className="text-gray-600 hover:text-blue-500">
+          <a href="#contact" className="text-white font-semibold hover:text-blue-500">
             Kontak
           </a>
         </nav>
-
-        {/* Tombol Kontak untuk Desktop */}
-        <a 
-          href="#contact" 
-          className="hidden md:block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
-        >
-          Hubungi Saya
-        </a>
-
+        
         {/* Tombol Menu Hamburger untuk Mobile 📱 */}
         <div className="md:hidden">
           <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <svg
-              className="w-6 h-6"
+              className="w-6 h-6 hover:bg-gray-200 transition-colors"
               fill="none"
-              stroke="currentColor"
+              stroke="white"
+              strokeWidth="2"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -68,12 +61,6 @@ function Header() {
           </a>
           <a href="#contact" className="block py-2 text-gray-600 hover:text-blue-500">
             Kontak
-          </a>
-          <a
-            href="#contact"
-            className="block mt-2 text-center bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
-          >
-            Hubungi Saya
           </a>
         </nav>
       )}
