@@ -1,7 +1,7 @@
 // src/components/Hero.jsx
 
 import React from 'react';
-const profilePhoto = './public/images/profile.jpeg';
+const profilePhoto = '/images/profile.jpeg';
 
 function Hero() {
   return (
@@ -12,36 +12,36 @@ function Hero() {
           {/* Kolom Kiri: Teks Profil 👨‍💻 */}
           <div className="text-center md:text-left">
             <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white">
-              Halo, saya <span className="text-blue-500">Muhammad Rafli Adyatma</span>
+              Hello, I'm <span className="text-blue-500"><br /> Muhammad Rafli Adyatma</span>
             </h1>
             <p className="mt-4 text-xl text-slate-600 dark:text-slate-300">
-              Seorang Web Developer dengan fokus pada Front-End.
+              Information Student at Universitas Merdeka Malang
             </p>
             <p className="mt-6 text-slate-500 dark:text-slate-400 leading-relaxed">
-              Saya suka membangun antarmuka pengguna yang cepat, intuitif, dan dinamis. Saat ini saya sedang mendalami React dan ekosistemnya untuk menciptakan pengalaman web yang lebih baik.
+              I'm interested in some programming things like fullstack web development and game development. Otherwise, I also a freelance 3D Artist. I love to learn new things and share my knowledge with others.
             </p>
             
             {/* Tombol Aksi (Call to Action) */}
             <div className="mt-8 flex justify-center md:justify-start gap-4">
               <a 
                 href="#projects" 
-                className="bg-blue-500 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-blue-600 transition-transform transform hover:scale-105"
+                className="bg-blue-500 text-white font-semibold px-7 py-3 rounded-lg shadow-lg hover:bg-blue-600 transition-transform transform hover:scale-105"
               >
-                Lihat Proyek
+                See My Projects 🚀
               </a>
               <a 
-                href="/cv-rafli.pdf" // Ganti dengan link ke file CV Anda
+                href="/docs/cv.pdf" // Ganti dengan link ke file CV Anda
                 download
-                className="bg-slate-200 text-slate-800 font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-slate-300 transition-transform transform hover:scale-105"
+                className="bg-slate-200 text-slate-800 font-semibold px-7 py-3 rounded-lg shadow-lg hover:bg-slate-300 transition-transform transform hover:scale-105"
               >
-                Unduh CV 📄
+                Download CV 📄
               </a>
             </div>
           </div>
           
           {/* Kolom Kanan: Foto Profil 👤 */}
           <div className="flex justify-center md:justify-end">
-            <div className="hidden md:block relative w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden shadow-2xl border-4 border-blue-500">
+            <div className="hidden md:block relative w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden shadow-3xl">
               <img 
                 src={profilePhoto} 
                 alt="Foto Profil Rafli" 
