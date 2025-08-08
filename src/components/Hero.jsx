@@ -18,7 +18,7 @@ function Hero() {
               Information Student at Universitas Merdeka Malang
             </p>
             <p className="mt-6 text-slate-500 dark:text-slate-400 leading-relaxed">
-              I'm interested in some programming things like fullstack web development and game development. Otherwise, I also a freelance 3D Artist. I love to learn new things and share my knowledge with others.
+              I'm interested in some programming things like fullstack web development and game development. Otherwise, I also a freelance 3D artist and graphic designer. I love to learn new things and share my knowledge with others.
             </p>
             
             {/* Tombol Aksi (Call to Action) */}
